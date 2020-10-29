@@ -41,7 +41,7 @@ function Favorites({ navigation }) {
   });
 
   useEffect(() => {
-    fetch("http://192.168.0.197:5001/api/getData")
+    fetch("http://47.232.193.179:5001/api/getData")
       .then((res) => res.json())
       .then((res) => setTrails(res.trailNames))
       .catch((err) => console.log(err));
